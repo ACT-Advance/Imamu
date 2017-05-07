@@ -5,13 +5,13 @@ using System.Web.Http;
 
 namespace Imamu
 {
-	public class Global : HttpApplication
-	{
-		protected void Application_Start()
-		{
-			AreaRegistration.RegisterAllAreas();
-			GlobalConfiguration.Configure(WebApiConfig.Register);
-			RouteConfig.RegisterRoutes(RouteTable.Routes);
-		}
-	}
+    public class Global : HttpApplication
+    {
+        protected void Application_Start()
+        {
+            AreaRegistration.RegisterAllAreas();
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+    }
 }
